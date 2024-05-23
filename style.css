@@ -1,0 +1,192 @@
+*{
+  font-family: "Poppins", sans-serif;
+  align-content: center;
+  font-size: 14px;
+}
+
+body{
+  margin: 0px;
+}
+
+.navbar{
+  width: 100%;
+  height: 100px;
+  background-color: #003049;
+  display: flex;
+  justify-content: space-between;
+}
+
+select{
+  background-color: white;
+  font-weight: bold;
+  color: #003049;
+  border: 0px;
+  border-radius: 15px;
+  text-align: center;
+  display: block;
+}
+
+.navbar-title {
+  font-weight: bold;
+  color: white;
+  align-content: center;
+  font-size: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  
+.navbar-dropdown {
+  width: 820px;
+  height: 50%;
+  display: flex;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  gap: 5px;
+}
+
+.nav-input {
+  width: 25%;
+}
+  
+.nav-input > select {
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  background-color: #E9E9E9;  
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  color: white;
+  font-weight: bold;
+  margin: 25px
+}
+
+.grid-item{
+  background-color: #003049;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 7.5px;
+}
+
+h2{
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 750;
+}
+
+h3{
+  font-size: 18px;
+  color: black;
+}
+
+.total {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+
+.satu{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.dua{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.tiga{
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.empat{
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+
+.lima{
+  grid-column-start: 9;
+  grid-column-end: 11;
+}
+
+.enam, .tujuh, .delapan, .sembilan, .sepuluh, .sebelas{
+  background-color: white;
+  color: #003049;
+}
+
+.enam{
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+  
+.tujuh{
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.delapan{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.sembilan{
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.sepuluh{
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+.sebelas{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+#doughnutChart {
+  width: 400px;
+  height: 400px;
+}
+
+.footer{
+  background-color: #003049;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;   
+  height: 50px;
+  line-height: 50px;
+}
+
+/* * Media Queries untuk Responsif */ 
+
+/* Untuk layar kecil seperti smartphone */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+    .grid-item {
+        padding: 10px;
+    }
+}
+
+/* Untuk layar sedang seperti tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
